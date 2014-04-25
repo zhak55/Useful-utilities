@@ -9,3 +9,13 @@ Function.prototype.bind =
  	  return func.apply( context, args.concat( sliced.call( arguments )));
       }
     }
+
+// e.g.
+
+function sum(a, b){
+    return a + b + this.c;
+};
+
+var test = sum.bind({c: 5});
+
+  console.log(test(1,3)); // =>9
