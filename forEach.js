@@ -1,8 +1,8 @@
 
 //  Executes a provided function once per array or object element
-//  @param {Object|Array}
-//  @param {Function}
-//  @param {Object}
+//  @param {Object|Array} [object]
+//  @param {Function} [callback]
+//  @param {Object} [context]
 
 function $forEach( object, callback, context ) {
   var keys   = Object.keys( object )
