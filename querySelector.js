@@ -11,6 +11,7 @@
  function query( selector, node ) {
   // if is used not a valid selector 
   // it throws error "Failed to execute ...  is not a valid selector." 
+  // try{}catch(e){} block solves it
    try {
     return ( node 
               || document ).querySelector( selector );
