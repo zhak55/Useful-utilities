@@ -17,3 +17,10 @@
             })
 
           data.add({age: 17, sex: 'F'});
+
+          data.mutate('age^2') // as regexp
+          data.mutate('age', Math.sqrt)
+
+          data.model('lm', {
+            specs: 'salary ~ age + sex + educ'
+          })
