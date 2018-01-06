@@ -11,6 +11,9 @@
             levels: ['F', 'M'],
             ordered: true // means F>M
           })
-            .define('id');
+            .define('id')
+            .on('before:add', data => {
+              data.age < 18; 
+            })
 
           data.add({age: 17, sex: 'F'});
