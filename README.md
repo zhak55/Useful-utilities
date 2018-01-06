@@ -8,7 +8,8 @@
           as('id:number').
           as('age:number').
           as('sex:factor', {
-            levels: ['F', 'M']
+            levels: ['F', 'M'],
+            ordered: true // means F>M
           })
             .define('id');
 
