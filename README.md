@@ -24,3 +24,6 @@
           data.model('lm', {
             specs: 'salary ~ age + sex + educ'
           })
+          
+          var save = data.forecast({old: true}).forecast({new: /* new data */}).getLast();
+          
