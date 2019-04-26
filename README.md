@@ -27,3 +27,7 @@
           
           var save = data.forecast({old: true}).forecast({new: /* new data */}).getLast();
           
+          
+         // data manipulation
+         data.sl('5, '); // get 5 rows
+         data.sl('age:sex') // get these 2 cols
